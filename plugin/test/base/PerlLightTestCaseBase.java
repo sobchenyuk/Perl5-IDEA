@@ -1781,7 +1781,7 @@ public abstract class PerlLightTestCaseBase extends LightCodeInsightFixtureTestC
     assertNotNull(targetElement);
     PsiElement[] targetElements = {targetElement};
     Collection<UsageInfo> usages = myFixture.findUsages(targetElement);
-    List<UsageGroupingRule> rules = getActiveGroupingRules(new UsageViewSettings(true, true, true, true, true));
+    List<UsageGroupingRule> rules = getActiveGroupingRules(new UsageViewSettings(true, true, true, true, true, false));
     StringBuilder sb = new StringBuilder();
     usages.forEach(usageInfo -> {
       PsiElement element = Objects.requireNonNull(usageInfo.getElement());
