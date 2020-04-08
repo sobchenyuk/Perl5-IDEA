@@ -7,6 +7,10 @@ git:
 #  - linux
 #  - osx
 
+branches:
+  except:
+    - dev202
+
 # Cache settings
 cache:
   timeout: 600
