@@ -25,13 +25,14 @@ public class MojoliciousIndentProcessor extends PerlIndentProcessor implements M
   public static final MojoliciousIndentProcessor INSTANCE = new MojoliciousIndentProcessor();
 
   public static final TokenSet ABSOLUTE_UNINDENTABLE_TOKENS = TokenSet.orSet(
-    PerlIndentProcessor.ABSOLUTE_UNINDENTABLE_TOKENS,
-    TokenSet.create(
-      MOJO_LINE_OPENER,
-      MOJO_LINE_EXPR_OPENER,
-      MOJO_LINE_EXPR_ESCAPED_OPENER,
-      MOJO_TEMPLATE_BLOCK_HTML
-    ));
+    //PerlIndentProcessor.ABSOLUTE_UNINDENTABLE_TOKENS,
+    //TokenSet.create(
+    //  MOJO_LINE_OPENER,
+    //  MOJO_LINE_EXPR_OPENER,
+    //  MOJO_LINE_EXPR_ESCAPED_OPENER,
+    //  MOJO_TEMPLATE_BLOCK_HTML
+    //)
+  );
 
   public static final TokenSet UNINDENTABLE_CONTAINERS = TokenSet.orSet(
     PerlIndentProcessor.UNINDENTABLE_CONTAINERS,
